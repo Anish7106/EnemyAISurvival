@@ -1,91 +1,47 @@
 # Enemy AI Survival
 
-A 2D top-down survival game developed using Unity and C#.
+A 2D top-down survival game built with Unity and C#. Survive enemy waves with mouse-aimed shooting, responsive movement, and enemies that transition from idle to chase to attack.
 
-The player must survive increasingly difficult waves of enemies while using movement, shooting, and the environment to stay alive.
+![Enemy AI Survival gameplay](Screenshots/gameplay.png)
 
-## Gameplay
+[Gameplay](Screenshots/gameplay.png) · [Main menu](Screenshots/main-menu.png) · [Enemy AI](Screenshots/enemy-ai.png)
 
-![Main Menu](Screenshots/main-menu.png)
+## Highlights
 
-![Gameplay](Screenshots/gameplay.png)
-
-![Enemy AI](Screenshots/enemy-ai.png)
-
-## Features
-
-- Player movement using keyboard controls
-- Mouse-directed shooting
+- Keyboard movement and mouse-directed shooting
 - Enemy AI with idle, chase, and attack behaviors
-- Distance-based enemy detection
-- Obstacle avoidance using raycasts
-- Enemy health bars
-- Damage and hit feedback
-- Knockback mechanics
-- Wave-based enemy spawning
-- Increasing enemy count between waves
-- Score system
-- Player health system
-- Game-over and restart system
-- Main menu
-
-## Enemy AI
-
-Enemies use three basic behaviors:
-
-```text
-Idle
-  ↓
-Chase
-  ↓
-Attack
-```
-
-When the player is outside the detection range, the enemy remains idle.
-
-When the player enters the detection range, the enemy moves toward the player.
-
-When the enemy gets close enough, it attacks the player.
-
-During chasing, raycasts are used to detect obstacles and select an alternate movement direction.
-
-## Technologies
-
-- C#
-- Unity
-- Unity 2D Physics
-- TextMesh Pro
-- Git
-- GitHub
+- Distance-based detection and raycast obstacle avoidance
+- Wave-based spawning with an increasing enemy count
+- Health, score, knockback, hit feedback, and enemy health bars
+- Main menu, game-over screen, and restart flow
 
 ## Controls
 
 | Input | Action |
-|---|---|
-| WASD / Arrow Keys | Move |
+| --- | --- |
+| WASD or arrow keys | Move |
 | Mouse | Aim |
-| Left Mouse Button | Shoot |
+| Left mouse button | Shoot |
 
-## Project Structure
+## Run the game
+
+1. Clone or download this repository.
+2. Open the project in Unity Hub.
+3. Open the `MainMenu` scene.
+4. Press **Play**, then select **PLAY**.
+
+## Built with
+
+C# · Unity · Unity 2D Physics · TextMesh Pro
+
+## Project layout
 
 ```text
 EnemyAISurvival/
 ├── Assets/
 ├── Packages/
 ├── ProjectSettings/
-├── Screenshots/
-├── README.md
-└── .gitignore
+└── Screenshots/
 ```
 
-## How to Run
-
-1. Clone or download the repository.
-2. Open the project using Unity Hub.
-3. Open the `MainMenu` scene.
-4. Press Play.
-5. Select `PLAY` to start the game.
-
-## Author
-
-Anish Bandaru
+**Author:** Anish Bandaru
